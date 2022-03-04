@@ -97,11 +97,11 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-if (num < 50) {
-  return true;
-} else {
-  return false;
-}
+  if (num > 50) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function obtenerResto(x, y) {
@@ -173,8 +173,8 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) return "es positivo");
-  if (numero < 0 return "es negativo");
+  if (numero > 0) return "Es positivo";
+  if (numero < 0) return "Es negativo";
   return false;
 }
 
@@ -234,13 +234,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  var vocales = letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u'
-  if(letra.length() > 1) {
+  if(letra.length > 1) {
+    return 'Dato incorrecto';
+  } else if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+    return 'Es vocal';
+  } else {
     return 'Dato incorrecto';
   }
-  if(vocales) {
-    return 'Es vocal';
-}
+
 }
 
 
